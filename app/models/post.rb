@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
   
   def clickbait?
     if CLICKBAIT.none? {|word| word.match(title)}
-      errors.add(:title, "fjdsklf")
+      errors.add(:title, "Errors")
     end 
   end 
 end
