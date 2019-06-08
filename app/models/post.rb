@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
       
       binding.pry 
     else 
-      
+      error.add(:title, "fjdsklf")
     end 
   end 
 end
