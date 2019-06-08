@@ -10,7 +10,6 @@ class Post < ActiveRecord::Base
   def clickbait?
     if CLICKBAIT.none? {|word| word == title}
       
-      binding.pry 
     else 
       error.add(:title, "fjdsklf")
     end 
